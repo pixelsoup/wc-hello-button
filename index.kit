@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Customised Built-in Element</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./images/favicon.svg" />
+    <link rel="stylesheet" href="css/production.css">
+    <!-- Polyfill required for Safari (4kb) -->
+    <!-- https://unpkg.com/browse/@ungap/custom-elements@1.3.0/README.md -->
+    <!-- https://github.com/ungap/custom-elements#readme -->
+     <!-- this should be on top of your HTML <head> scripts -->
+     <!-- webkit bugzilla https://bugs.webkit.org/show_bug.cgi?id=182671 -->
+    <script src="https://unpkg.com/@ungap/custom-elements@1.3.0/min.js"></script>
+    <!-- Customised Built-in Element -->
+    <script type="module" src="./js/hello-button.js"></script>
+  </head>
+  <body>
+    <div class="containerPadded">
+      <h1>Customised Built-in Element</h1>
+      <button is="hello-button">Say Hello</button>
+    </div>
+  </body>
+</html>
